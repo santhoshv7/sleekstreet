@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleekStreet</title>
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="./images/favicon1.png" type="x-icon">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <!-- Offer section -->
+    
+    <div class="offer-bar">
+        <p>Sign Up And <b>GET 20% OFF </b>For Your First Order!</p>
+        <i class="fa-solid fa-xmark" style="color: #ffffff; cursor:pointer; margin-left: 10%;" id="offer-close"></i>
+    </div>
+
+    <!-- Navbar section -->
+    
+    <nav class="nav-bar">
+        <h1>SleekStreet</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="./index.html">Home</a></p>
+            <p class="navbar-link"><a href="index.html#new-arrivals">New Arrival</a></p>
+            <p class="navbar-link"><a href="index.html#most-wanted">Most Wanted</a></p>
+            <p class="navbar-link"><a href="./collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="./contactus.html">Contact Us</a></p>
+    
+        </div>
+    
+        <div class="nav-menu">
+            <i class="fa-solid fa-bars" id="side-navbar-activate" style="cursor:pointer"></i>
+    
+        </div>
+    
+    </nav>
+    
+    <!-- Side Navbar -->
+    
+    <div class="side-navbar">
+        <p style="text-align: right;"><i class="fa-solid fa-xmark" id="side-navbar-close" style="cursor:pointer"></i>
+        </p>
+    
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="./index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="index.html #new-arrivals">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="index.html #most-wanted">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="./collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="./contactus.html">Contact Us</a></p>
+    
+    
+        </div>
+    </div>
+
+    <!-- Collections Section -->
+
+    <div class="collections-container">
+        <aside class="filters">
+            <h3>Occasion</h3>
+            <label><input type="checkbox" value="Summer" class="filter-checkbox"> Summer</label><br>
+            <label><input type="checkbox" value="Party" class="filter-checkbox"> Party</label><br>
+            <label><input type="checkbox" value="Beach" class="filter-checkbox"> Beach</label><br>
+
+            <h3>Color</h3>
+            <label><input type="checkbox" value="Red" class="filter-checkbox"> Red</label><br>
+            <label><input type="checkbox" value="Blue" class="filter-checkbox"> Blue</label><br>
+            <label><input type="checkbox" value="White" class="filter-checkbox"> White</label><br>
+            <label><input type="checkbox" value="Green" class="filter-checkbox"> Green</label><br>
+
+            <h3>Arrivals</h3>
+            <label><input type="checkbox" value="Old" class="filter-checkbox"> Old</label><br>
+            <label><input type="checkbox" value="New" class="filter-checkbox"> New</label><br>
+
+
+        </aside>
+
+        <div class="products-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="searchInput">
+
+            </div>
+            <div class="products">
+                <div class="product" data-tags="summer,old,red">
+                    <img src="./images/f1.jpg" alt="Floral Summer Shirt">
+                    <h1>Floral Summer Shirt</h1>
+                    <p>₹220</p>
+                </div>
+                <div class="product" data-tags="summer,green,new">
+                    <img src="./images/f2.jpg" alt="Summer Green">
+                    <h1>Summer Green Shirt</h1>
+                    <p>₹260</p>
+                </div>
+                <div class="product" data-tags="white,party,new">
+                    <img src="./images/f3.jpg" alt="Party Floral Shirt">
+                    <h1>Party Floral Shirt</h1>
+                    <p>₹399</p>
+                </div>
+                <div class="product" data-tags="red,old,party">
+                    <img src="./images/f4.jpg" alt="Floral Summer Shirt">
+                    <h1>Floral Party Shirt</h1>
+                    <p>₹349</p>
+                </div>
+                <div class="product" data-tags="blue,old,beach">
+                    <img src="./images/f5.jpg" alt="Beach Shirt">
+                    <h1>Blue Wave Beach Shirt</h1>
+                    <p>₹579</p>
+                </div>
+                <div class="product" data-tags="blue,beach,new">
+                    <img src="./images/f6.jpg" alt="Shirt Party Red">
+                    <h1>Ocean Blue Beach Shirt</h1>
+                    <p>₹499</p>
+                </div>
+                <div class="product" data-tags="green,old,party">
+                    <img src="./images/f3.jpg" alt="Party Floral Shirt">
+                    <h1>Tropical Party Green Shirt</h1>
+                    <p>₹699</p>
+                </div>
+                <div class="product" data-tags="white,summer,new">
+                    <img src="./images/f6.jpg" alt="Shirt Party ">
+                    <h1>White Oasis Summer Shirt</h1>
+                    <p>₹699</p>
+                </div>
+                <div class="product" data-tags="beach,old,red">
+                    <img src="./images/f1.jpg" alt="Floral Summer Shirt">
+                    <h1>Vibrant Red Beach Shirt</h1>
+                    <p>₹349</p>
+                </div>
+                
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- News -->
+    
+    <div class="news">
+        <h1>Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text"><br>
+        <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    
+    
+    </div>
+
+<!-- Footer -->
+
+<div class="footer">
+    <div class="footer-container1">
+        <h1>SleekStreet</h1>
+        <p>Discover the latest trends with Nostra – your go-to destination for affordable and stylish fashion
+            essentials!</p>
+
+    </div>
+    <div class="footer-container2">
+        <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+
+    </div>
+    <p class="copy">&copy 2024 SleekStreet Ltd. All rights reserved.</p>
+
+</div>
+
+<!-- Javascript file link -->
+ <script src="./collections.js"></script>
+    
+</body>
+</html>
